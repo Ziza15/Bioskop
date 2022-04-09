@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "icon" href ="img/logo1.png" type = "image/x-icon">
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+
+    <title>Kontakt - Cinema City</title>
+  </head>
+  <body>
+    <!-- NAVIGACIJA -->
+    <nav class="bg-light sticky-top">
+      <div class="logo">
+          <a href="index.html">
+              <img src="img/logo.png" alt="logo">
+          </a>
+      </div>
+      <div class="hamburger">
+          <a href="#" class="dugme"><i class="fas fa-bars" ></i></a>
+      </div>
+     
+      <ul class="meni">
+          <li ><a href="index.html">Početna</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Ponuda</a>
+            <ul class="dropdown-menu p-0 ">
+              <li style="width: 100%;"><a class="dropdown-item" href="akcija.html" >Akcija</a></li>
+              <li style="width: 100%;"><a class="dropdown-item" href="animirani.html">Animirani</a></li>
+              <li style="width: 100%;"><a class="dropdown-item" href="horor.html">Horor</a></li>
+              <li style="width: 100%;"><a class="dropdown-item" href="triler.html">Triler</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="onama.html">O nama</a></li>
+      </ul>
+  </nav>
+
+       <div class="container">
+            <div class="row"> 
+                <div class="col-lg-8 offset-lg-2 mt-5">
+                    <h3>Kontakt</h3>
+                    <hr>
+                </div>
+            </div>
+       </div> 
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 border">
+                    <form class="mt-3 row" id="formaa">
+                        <div class="form-group mb-3 col-sm-6" >
+                            <label class="mb-1" for="ime"><i class="fas fa-user"></i> Ime</label>
+                            <div>
+                            <input type="text" class="form-control" name="ime" id="ime" autofocus placeholder="Unesite svoje ime">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3 col-sm-6">
+                            <label class="mb-1" for="prezime"><i class="fas fa-user"></i> Prezime</label>
+                            <div>
+                            <input type="text" class="form-control" name="prezime" id="prezime" placeholder="Unesite svoje prezime">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3 col-sm-6">
+                            <label class="mb-1" for="email"><i class="fas fa-envelope"></i> E-mail</label>
+                            <div>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="example@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3 col-sm-6">
+                            <label class="mb-1" for="tel"><i class="fas fa-phone"></i> Telefon</label>
+                            <div>
+                            <input type="tel" class="form-control" name="tel" id="tel" placeholder="+381 53-534-3242">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3 col-sm-12">
+                            <label class="mb-1" for="naslov"><i class="fas fa-heading"></i> Naslov poruke</label>
+                            <div>
+                            <input type="tel" class="form-control" name="naslov" id="naslov" placeholder="Unesite naslov poruke">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3 col-sm-12">
+                            <label class="mb-1" for="poruka"><i class="fas fa-edit"></i> Poruke</label>
+                            <div>
+                            <textarea type="text" class="form-control" name="poruka" id="poruka" placeholder="Unesite poruku" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3 col-sm-12">
+                          <button type="submit" value="Submit" class="btn btn-success" id="posaljiPodatke">Pošaljite poruku</button>
+                          <button type="reset" value="Reset" class="btn btn-danger" id="reset">Restartuj podatke</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="mt-3">
+          <div class="container-fluid bg-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 text-light mt-3">
+                  <h5>KONTAKT</h5>
+                  <hr class="bg-light">
+                  CINEMA CITY <br>
+                  <a href="https://goo.gl/maps/nj2nCmFcK5Xp3sQP7" target="_blank">Radnička 9, Beograd 11030</a><br>
+                  <a href="mailto:cinemacitye@cinema.rs">cinemacitye@cinema.rs"</a><br>
+                  <a href="tel:+381-61-358-39-27">+381 61 358 39 27</a><br>
+                  Pratite nas na: <br>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x pe-1 ps-1"></i></a>
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x pe-1"></i></a>
+                  <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter-square fa-2x pe-1"></i></a> 
+                  
+                </div>
+                <div class="col-md-4 text-light  mt-3">
+                  <h5>MENI</h5>
+                  <hr class="bg-light">
+                  <a href="index.html">Početna</a><br>
+                  <a href="kontakt.html">Kontakt</a><br>
+                  <a href="galerija.html">Galerija</a><br>
+                  <a href="online.html">Online kupovina</a><br>
+                  <a href="akcija.html">Akcija</a><br>
+                  <a href="animirani.html">Animirani</a><br>
+                  <a href="horor.html">Horor</a><br>
+                  <a href="triler.html">Triler</a><br>
+                  <a href="onama.html">O nama</a><br>
+        
+                </div>
+                <div class="col-md-4 text-light  mt-3">
+                  <h5>REZERVACIJE</h5>
+                  <hr class="bg-light">
+                  Telefonske rezervacije:<br>
+                  <span><small>
+                  -Radnim danima od 10h do 19h<br>
+                  -Vikendom od 12h do 17h<br></small> 
+                  </span>
+                  <small> Na broj: <a href="tel:+381-61-358-39-27">+381 61 358 39 27</a><br></small>
+                  <h5>Prijavi se na newsletter</h5>
+                  <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="E-mail" aria-describedby="povezi-dugme">
+                    <button class="btn btn-danger" type="button" id="povezi-dugme">Prijavite se</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <hr class="bg-light">
+                <div class="col-12 text-center text-light mb-3"><i class="far fa-copyright"></i> 2021. CINEMA CITY</div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+        <script>
+          $(document).ready(function () {
+            $(".dugme").click(function(){
+              $(".meni").toggleClass("responsive")
+            });
+            $("#posaljiPodatke").click(function(){
+              var ime=$("#ime").val();
+              var prezime=$("#prezime").val();
+              var email=$("#email").val();
+              var tel=$("#tel").val();
+              var naslov=$("#naslov").val();
+              var poruka=$("#poruka").val();
+              var regEx = /^[a-z0-9][a-z0-9._%+-]{0,63}@(?:[a-z0-9-]{1,63}\.){1,125}[a-z]{2,63}$/;
+              var validEmail = regEx.test(email);
+              var ispravanTel = /^\+?([0-9]{3})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{3})[-. ]?([0-9]{3,5})$/;
+              var validTel =ispravanTel.test(tel);
+              if (ime==="" || ime===null)
+              {
+		            alert("Niste unijeli ime!");
+                return false;
+              }
+              else if (ime.length<3)
+              {
+		            alert("Dužina imena mora da sadrzi minimalno tri karaktera!");
+                return false;
+              }
+              else if(prezime==="" || prezime===null){
+                alert("Niste unijeli prezime!");
+                return false;}
+              else if (prezime.length<3)
+              {
+		            alert("Dužina prezimena mora da sadrzi minimalno tri karaktera!");
+                return false;
+              }  
+              else if(email==="" || email===null){
+                alert("Niste unijeli email adresu!");
+                return false;}
+              else if(!validEmail){
+                alert("Niste unijeli ispravnu email adresu!");
+                return false;}
+              else if(tel==="" || tel===null){
+                alert("Niste unijeli broj telefona!");
+                return false;}
+                else if(!validTel){
+                alert("Niste unijeli ispravnu broj telefona!");
+                return false;}
+              else if(naslov==="" || naslov===null){
+                alert("Niste unijeli naslov poruke!");
+                return false;}
+                else if (naslov.length<3)
+                {
+                  alert("Dužina naslova mora da sadrzi minimalno 3 karaktera! Oblik +xxx-xx-xxx-xxx(xx)");
+                  return false;
+                }  
+              else if(poruka==="" || poruka===null){
+                alert("Niste unijeli poruku!");
+                return false;}
+                else if (poruka.length<6)
+                {
+                  alert("Dužina poruke mora da sadrzi minimalno 6 karaktera!");
+                  return false;
+                }  
+                else{
+                  alert("Uspesno ste poslali formu");
+                  return true;}
+            })
+          });
+        </script>
+       
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        -->
+      </body>
+    </html>

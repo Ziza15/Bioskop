@@ -1,0 +1,227 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, Arial, sans-serif;
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+nav .logo {
+  float: left;
+  height: 4em;
+  line-height: 4em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+nav .logo img {
+  height: 2em;
+  vertical-align: middle;
+}
+
+nav .logo a {
+  display: block;
+}
+
+nav .meni {
+  float: right;
+  margin: 0;
+  padding: 0;
+  height: 4em;
+}
+
+nav .meni li {
+  display: inline-block;
+  line-height: 4em;
+  margin: 0;
+}
+
+nav .meni li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0 1.5em;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+nav .meni li a:hover {
+  color: #f7f7f7;
+  background-color: #4d4f4b;
+  -webkit-box-shadow: inset 0px -3px 0px 0px #f5821e;
+          box-shadow: inset 0px -3px 0px 0px #f5821e;
+}
+
+nav .meni li.active a {
+  color: #f5821e;
+  -webkit-box-shadow: inset 0px -3px 0px 0px #f5821e;
+          box-shadow: inset 0px -3px 0px 0px #f5821e;
+}
+
+nav .hamburger .dugme {
+  color: #4d4f4b;
+  display: none;
+}
+
+.pomMeni {
+  height: 4em;
+  width: 100%;
+  background-color: #292b2c;
+  border-radius: 1.5625em;
+}
+
+.pomMeni li {
+  display: inline-block;
+  width: 18.5%;
+  line-height: 4em;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pomMeni li:hover {
+  background-color: #4d4f4b;
+}
+
+#lista1 .card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#lista2 {
+  display: none;
+}
+
+#lista2 .card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#lista3 {
+  display: none;
+}
+
+#lista3 .card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#lista4 {
+  display: none;
+}
+
+#lista4 .card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#lista5 {
+  display: none;
+}
+
+#lista5 .card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#galerija .img-fluid:hover {
+  opacity: 0.7;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#filmovi .row:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+footer {
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+footer a:hover {
+  color: #f7f7f7;
+}
+
+footer span {
+  text-transform: initial;
+}
+
+footer hr {
+  color: #f5821e;
+  width: 30%;
+  padding: 1px;
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 980px) {
+  nav .hamburger .dugme {
+    display: block;
+    float: right;
+    font-size: 2em;
+    line-height: 2em;
+    width: 2em;
+    text-align: center;
+  }
+  nav .hamburger .dugme a {
+    padding: 0;
+    margin: 0;
+  }
+  nav .hamburger .dugme a:hover {
+    color: white;
+  }
+  nav .meni {
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+    padding-left: 0;
+  }
+  nav .meni li {
+    display: none;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .meni.responsive {
+    height: 20em;
+    position: relative;
+    width: 100%;
+  }
+  .meni.responsive li {
+    display: block;
+  }
+  .pomMeni {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  #poravnanje {
+    margin-left: 0 !important;
+  }
+  div[id^="lista"] {
+    margin-left: 0;
+  }
+  div[id^="lista"] h5 {
+    font-size: 17px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

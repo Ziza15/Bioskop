@@ -1,0 +1,222 @@
+    $narandzasta: #f5821e;
+    $crna1: #4d4f4b;
+    $bijela1:#f7f7f7; 
+    @mixin listeTra{
+        .card{
+            &:hover{
+            transform: scale(1.1,1.1);
+            }
+        }
+    }
+    @mixin liste {
+        display: none;
+        @include listeTra();
+    }
+  
+  html{
+       margin: 0;
+       padding: 0;
+       font-family: Arial, Helvetica, Arial, sans-serif;
+   }
+   nav {
+        &::after{
+        content: "";
+        clear: both;
+        display: block;}
+            .logo{
+                float:left;
+                height: 4em;
+                line-height: 4em;
+                margin-right: 1em;
+                margin-left: 1em;
+                img{ 
+                    height: 2em;
+                    vertical-align: middle;
+                }
+                a {
+                    display: block;
+                }
+            }
+            .meni{
+                float: right;
+                margin: 0;
+                padding: 0;
+                height: 4em;
+                li{
+                    display: inline-block;
+                    line-height:4em;
+                    margin: 0;
+                    
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color:black;
+                        padding: 0 1.5em;
+	                    text-transform: uppercase;	
+	                    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                        &:hover{
+                            color:$bijela1 ;
+	                        background-color:$crna1;
+	                        box-shadow: inset 0px -3px 0px 0px $narandzasta;
+
+
+                        }
+                        
+
+                    }
+                }
+                li.active {
+                    a {
+                        color: $narandzasta;
+                      
+                        box-shadow: inset 0px -3px 0px 0px $narandzasta;
+                    }
+                }
+            }
+            .hamburger{
+                .dugme{
+                    color: $crna1;
+                    display: none;
+                }
+            }
+        }
+
+       
+.pomMeni{
+    height: 4em;
+    width:100%;
+    background-color: #292b2c;
+    border-radius: 1.5625em;
+    li{
+        display: inline-block;
+        width: 18.5%;
+        line-height:4em;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            background-color:$crna1;
+        }
+       
+    }
+}
+#lista1{
+    @include listeTra();
+}
+#lista2{
+    @include liste();
+}
+#lista3{
+    @include liste();
+}
+#lista4{
+    @include liste();
+}
+#lista5{
+    @include liste();
+}
+#galerija {
+        .img-fluid{
+            &:hover{
+                opacity: 0.7;
+                cursor: zoom-in;
+                transform: scale(1.1,1.1);
+            }
+        }
+    }
+
+#filmovi{
+    .row{
+        &:hover{
+            transform: scale(1.1,1.1);
+            }
+        }
+}
+footer{
+    text-transform: uppercase;
+    line-height:1.5em;
+    letter-spacing: 0.1em;
+    
+    a{
+        text-decoration: none;
+        color:grey;
+        &:hover{
+            color: $bijela1;
+        }
+    }
+    span{
+        text-transform: initial;
+    }
+    hr{
+        color:$narandzasta;
+        width: 30%;
+        padding: 1px;
+    }
+}
+.banner{
+	background-color: rgba(0, 0, 0, .4);
+	
+}
+
+@media screen and (max-width: 980px) {
+    nav{
+        
+        .hamburger{
+            .dugme{
+                display: block;
+                float: right;
+                font-size: 2em;
+                line-height: 2em;
+                width: 2em;
+                text-align: center;
+                a{
+                    padding: 0;
+                    margin:0;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+        .meni{
+            transition: 1.0s;
+            padding-left: 0;
+            li{
+                display: none;
+                transition: background-color 0.3s ease-in-out;
+
+            }
+        }
+
+        }
+        .meni.responsive {
+            height: 20em;
+            position: relative;
+            width: 100%;
+            
+            li {
+                display: block;
+            }
+        }
+    .pomMeni{
+        font-size: 12px;
+    }
+
+    }
+    @media screen and (max-width: 1400px) and (min-width: 1200px) {
+        
+        #poravnanje{
+            margin-left: 0 !important;
+            
+        }
+        div[id^="lista"]{
+            margin-left: 0;
+            h5{
+                font-size: 17px;
+            }
+        }
+    }
+    
+    
